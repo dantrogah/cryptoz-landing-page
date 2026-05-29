@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoZ Landing Page</title>
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/hero.css" />
+    <link href="https://fonts.cdnfonts.com/css/yukita-sans" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+          <div>9.41</div>
+
+          <div class="status-icons">
+            <img src="img/mobile_signal.png" alt="Mobile signal icon" />
+            <img src="img/wifi_icon.png" alt="Wifi icon" />
+            <span>70</span>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="logo">
+            <img src="img/nexo-logo.jpg" alt="Company logo" />
+            <div>Crypto <span>Z</span></div>
+          </div>
+
+          <div class="nav-link">
+            <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Price</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="right-section">
+            <span>Sign in</span>
+            <button>Started</button>
+          </div>
+
+          <div class="menu-container">
+            <img src="img/menu_icon.png" alt="Menu icon" />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-left">
+          <h1>
+            Your all-in-one platform to buy, sell, trade, and earn
+            Cryptocurrencies
+          </h1>
+
+          <p>
+            Open a free account in minutes right from your phone and make your
+            money go further
+          </p>
+
+          <div class="form-container" action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address..."
+            />
+            <button class="form-btn">Get Started</button>
+          </div>
+        </div>
+
+        <!-- Currency Converson Section -->
+        <div class="hero-right">
+          <h2>Currency Converter</h2>
+
+          <!-- Currency from and Value Section -->
+          <div class="info">
+            <label for="amount">Amount</label>
+            <div>
+              <select name="" id="amount">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+              </select>
+              <input type="text" />
+            </div>
+          </div>
+
+          <!-- Currency to and Correspondent amount -->
+          <div class="info">
+            <label for="converteTo">Converted to</label>
+            <div>
+              <select name="" id="convertedTo">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+              </select>
+              <input type="text" />
+            </div>
+          </div>
+
+          <!-- Date of Currency rate -->
+          <div class="info">
+            <label for="date">Date</label>
+            <div>
+              <input type="date" name="date" id="date" />
+            </div>
+          </div>
+
+          <span class="currency-examples">EUR GBP BTC</span>
+        </div>
+      </section>
+
+      <!-- Group Stats Section -->
+      <section class="gp-stats">
+        <div class="container">
+          <div class="company-names">
+            <div class="three-companies">
+              <span>Binance</span>
+              <span>coinbase</span>
+              <span><span class="bitcoin-logo">B</span>bitcoin</span>
+            </div>
+            <div class="two-companies">
+              <span><span class="tether-logo">T</span>tether</span>
+              <span>BitMEX</span>
+            </div>
+          </div>
+          <div class="stats-container">
+            <div class="numbers-people-joined">
+              <span>99k</span>
+              <p>People have joined</p>
+            </div>
+            <div class="numbers-people-joined">
+              <span>50k</span>
+              <p>VVIP users have joined</p>
+            </div>
+            <div class="numbers-people-joined">
+              <span>100k</span>
+              <p>Big Companies have joined</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

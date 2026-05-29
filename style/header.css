@@ -1,0 +1,82 @@
+.header,
+.hero-section,
+.gp-stats {
+  min-width: 375px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.status-bar,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 18px 24px; */
+  font-size: 18px;
+}
+
+.status-bar {
+  margin-bottom: 20px;
+}
+
+.navbar .nav-link,
+.navbar .right-section {
+  display: none;
+}
+
+.nav-link ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  font-size: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* TABLET SIZE */
+@media (min-width: 768px) {
+  .status-bar,
+  .menu-container {
+    display: none;
+  }
+
+  .navbar .nav-link,
+  .navbar .right-section {
+    display: block;
+  }
+
+  .logo div {
+    font-weight: 900;
+  }
+
+  .logo span {
+    color: rgb(28, 28, 236);
+    margin-left: -5px;
+  }
+
+  .navbar .right-section {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .right-section button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #2752e7;
+    border: 1px solid #2752e7;
+  }
+}
