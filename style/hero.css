@@ -138,16 +138,23 @@
   gap: 30px;
 }
 
-.three-companies {
+.three-companies,
+.two-companies {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.three-companies {
   width: 100%;
   padding: 0 10px;
 }
 
+.company-names img {
+  height: 18px;
+}
+
 .two-companies {
-  display: flex;
-  justify-content: space-around;
   width: 60%;
 }
 
@@ -192,6 +199,85 @@
   color: #626262;
 }
 
+/* Phones Section */
+.phones-section {
+  min-width: 375px;
+  background-color: #e8fafe;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.phones-left,
+.phones-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Platform Section */
+.platform-section {
+  min-width: 375px;
+  background-color: #fff;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.platform-section h2 {
+  font-family: "Yukita Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #050e2c;
+  line-height: 1.25;
+  width: 300px;
+  margin-bottom: 32px;
+}
+
+.notice-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice-details div {
+  /* min-width: 400px; */
+  text-align: left;
+  margin-bottom: 24px;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.notice-details span {
+  font-family: "Yukita Sans", sans-serif;
+  color: #d0dbff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.notice-details h3 {
+  /* font-family: "Yukita Sans", sans-serif; */
+  font-size: 22px;
+  margin-bottom: 10px;
+  /* font-weight: 700; */
+  color: #050e2c;
+}
+
+.notice-details p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #626262;
+  line-height: 1.5;
+}
+
+/* Making Webpage Responsive */
 @media (min-width: 768px) {
   .hero-left,
   .hero-right {
