@@ -246,16 +246,11 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .notice-details div {
-  /* width: 400px; */
   text-align: left;
   margin-bottom: 24px;
-  /* margin-left: 44px;
-  margin-right: 44px; */
 }
 
 .notice-details span {
@@ -268,7 +263,6 @@
 }
 
 .notice-details h3 {
-  /* font-family: "Yukita Sans", sans-serif; */
   font-size: 22px;
   margin-bottom: 10px;
   /* font-weight: 700; */
@@ -483,7 +477,6 @@
 }
 
 .card {
-  height: 342px;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -494,7 +487,6 @@
 }
 
 .card h2 {
-  width: 250px;
   color: #fff;
   font-family: "Yukita Sans", sans-serif;
   font-weight: 700;
@@ -512,18 +504,17 @@
   color: #000;
 }
 
-/* FOOTER STYLING */
-footer {
-  border: 2px solid green;
+.card_section img {
+  display: none;
 }
 
+/* FOOTER STYLING */
 .footer-container,
 .footer-bottom-content {
   margin: 15px;
   border: none;
   border-radius: 5px;
   background-color: #2752e7;
-  border: 2px solid red;
 }
 
 .top-section-list,
@@ -570,13 +561,13 @@ footer {
   border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #fff;
-  padding-top: 30px;
+  padding: 50px 0;
   border-radius: 0;
 }
 
 .footer-bottom-content .question {
   font-family: "Yukita Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.3;
 }
@@ -621,6 +612,10 @@ footer {
   }
 
   /* COMPANY LOG AND STATISTICS SECTION */
+  .header {
+    padding-bottom: 15px;
+  }
+
   .phone-platform-container {
     display: flex;
     justify-content: center;
@@ -704,8 +699,6 @@ footer {
   }
 
   /* ACTIVITY SECTION */
-  .activity-section {
-  }
   .card-main-container {
     display: flex;
     gap: 20px;
@@ -770,10 +763,76 @@ footer {
     font-size: 14px;
     line-height: 1.6;
   }
+
+  /* cards */
+  .card_section {
+    position: relative;
+  }
+
+  .card_section .card {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .card_section .card h2 {
+    width: 80%;
+    text-align: left;
+  }
+
+  .card_section .card button {
+    width: 25%;
+  }
+
+  .card_section .card_img1,
+  .card_section .card_img2,
+  .card_section .card_img3 {
+    display: block;
+    position: absolute;
+  }
+
+  .card_section .card_img1 {
+    top: -20px;
+    right: 50px;
+    height: 120px;
+  }
+
+  .card_section .card_img2 {
+    bottom: 50px;
+    right: 160px;
+    height: 80px;
+  }
+
+  .card_section .card_img3 {
+    bottom: 40px;
+    right: 20px;
+    height: 90px;
+  }
+
+  /* footer */
+  .footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .top-section-list,
+  .middle-section-list {
+    width: 33.333%;
+    justify-content: space-between;
+  }
 }
 
 /* LAPTOP AND DESKSTOP STYLING */
 @media (min-width: 1024px) {
+  body {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding-bottom: 15px;
+  }
+
   .hero-section {
     flex-direction: row;
     height: auto;
@@ -796,7 +855,7 @@ footer {
 
   .form-container {
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 30px;
   }
 
   .form-container input {
@@ -808,5 +867,65 @@ footer {
   .hero-left button {
     height: 52px;
     flex: 1;
+  }
+
+  .card_section {
+    position: relative;
+    border-radius: 10px;
+    padding: 50px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    min-width: 60%;
+    padding: 0;
+  }
+
+  .card h2 {
+    text-align: left;
+  }
+
+  .card button {
+    width: 30%;
+  }
+
+  .card_section .card_img1,
+  .card_section .card_img2,
+  .card_section .card_img3 {
+    display: block;
+    position: absolute;
+  }
+
+  .card_section .card_img1 {
+    top: -20px;
+    right: 10%;
+    height: 130px;
+  }
+
+  .card_section .card_img2 {
+    bottom: 40px;
+    right: 190px;
+    height: 100px;
+  }
+
+  .card_section .card_img3 {
+    bottom: 40px;
+    right: 40px;
+    height: 100px;
+  }
+
+  .footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .top-section-list,
+  .middle-section-list {
+    width: 33.333%;
+    justify-content: space-between;
   }
 }
